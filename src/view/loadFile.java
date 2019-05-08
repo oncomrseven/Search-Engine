@@ -63,6 +63,11 @@ public class loadFile extends javax.swing.JFrame {
         });
 
         MenuItem1.setText("Open");
+        MenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuItem1ActionPerformed(evt);
+            }
+        });
         jMenu1.add(MenuItem1);
 
         jMenuBar1.add(jMenu1);
@@ -88,13 +93,15 @@ public class loadFile extends javax.swing.JFrame {
 
     private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
           // TODO add your handling code here:
-        JFileChooser jfc = new JFileChooser();
+                                  
+    }//GEN-LAST:event_jMenu1ActionPerformed
+
+    private void MenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuItem1ActionPerformed
+       JFileChooser jfc = new JFileChooser();
         jfc.showOpenDialog(null);
 
-                                  
-
         
-    }//GEN-LAST:event_jMenu1ActionPerformed
+    }//GEN-LAST:event_MenuItem1ActionPerformed
 
     /**
      * @param args the command line arguments
